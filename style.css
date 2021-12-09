@@ -18,7 +18,7 @@ body {
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
-    margin: 1em;
+    margin-left: 1em;
   }
   
   .search {
@@ -79,8 +79,6 @@ body {
     display: flex;
     flex-direction:column;
     justify-content: center;
-    flex-wrap: wrap;
-    overflow-y: scroll;
   }
   .col-main{
     display: flex;
@@ -88,6 +86,7 @@ body {
   #main-card{
     margin:auto;
     height: 20em;
+    margin-bottom: 1em;
   }      
   #weather-card{
     width: 100%;
