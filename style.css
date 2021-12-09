@@ -25,6 +25,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #000000d0;
+    border-radius: 30px;
+  color: white;
+  max-height: 4em;
+  max-width: 24em;
+  padding: auto;
   }
   
   button {
@@ -72,8 +78,14 @@ body {
   }
   
   .weather.loading {
-    max-height: 20px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #000000d0;
+    border-radius: 30px;
+  color: white;
+    width: 18em;
+    justify-content: center;
+    padding: 1em;
   }
   .main{
     display: flex;
@@ -85,10 +97,9 @@ body {
     display: flex;  
   }
   #main-card{
-    margin:auto;
-    height: 20em;
-    margin-bottom: 1em;
-    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;  
   }      
   #weather-card{
     width: 100%;
