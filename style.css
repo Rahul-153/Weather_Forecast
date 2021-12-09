@@ -82,12 +82,13 @@ body {
     margin:1em;
   }
   .col-main{
-    display: flex;
+    display: flex;  
   }
   #main-card{
     margin:auto;
     height: 20em;
     margin-bottom: 1em;
+    height: 80%;
   }      
   #weather-card{
     width: 100%;

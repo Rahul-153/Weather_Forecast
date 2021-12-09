@@ -30,7 +30,7 @@ let otherDayForcast = '';
         if(idx == 0){
             document.getElementsByClassName("weather")[0].innerHTML = `
             <h2 class="city">Weather in ${city}</h2>
-        <h1 class="temp">51°C</h1>
+        <h1 class="temp">${day.temp.day}°C</h1>
         <div class="flex">
           <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="" class="icon" />
           <div class="description">${day.weather[0].description}</div>
