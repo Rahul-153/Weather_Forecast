@@ -79,6 +79,7 @@ body {
     display: flex;
     flex-direction:column;
     justify-content: center;
+    margin:1em;
   }
   .col-main{
     display: flex;
