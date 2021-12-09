@@ -1,68 +1,3 @@
-//   let weather = {
-//     apiKey: "8b528b99273fc7895a938db1b8590125",
-//     fetchWeather: function (city) {
-//       fetch(
-//         "https://api.openweathermap.org/data/2.5/weather?q=" +
-//           city +
-//           "&units=metric&appid=" +
-//           this.apiKey
-//       )
-// .then((response) => {
-//     if (!response.ok) {
-//       alert("No weather found.");
-//       throw new Error("No weather found.");
-//     }
-//     return response.json();
-//   })
-//   .then((data) => this.displayWeather(data),this.console.log(data));
-// },
-// displayWeather: function (data) {
-// const { name } = data;
-// const { icon, description } = data.weather[0];
-// const { temp, humidity } = data.main;
-// const { speed } = data.wind;
-// document.querySelector(".city").innerText = "Weather in " + name;
-// document.querySelector(".icon").src =
-//   "https://openweathermap.org/img/wn/" + icon + ".png";
-// document.querySelector(".description").innerText = description;
-// document.querySelector(".temp").innerText = temp + "°C";
-// document.querySelector(".humidity").innerText =
-//   "Humidity: " + humidity + "%";
-// document.querySelector(".wind").innerText =
-// "Wind speed: " + speed + " km/h";
-// document.querySelector(".weather").classList.remove("loading");
-// document.body.style.backgroundImage =
-//   "url('https://source.unsplash.com/1600x900/?" + name + "')";
-// },
-// search: function () {
-// this.fetchWeather(document.querySelector(".search-bar").value);
-// },
-// cards:function(data){
-//     const{lat,lon}=data.coord;   
-// }
-// };
-
-// document.querySelector(".search button").addEventListener("click", function () {
-// weather.search();
-// });
-
-// let weather2={
-//     fetchWeather2:function (lan,lon) {
-//         fetch(
-//             "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&exclude="+daily+"&appid="+
-//             this.apiKey
-//         )
-//   .then((response) => {
-//       if (!response.ok) {
-//         alert("No weather found.");
-//         throw new Error("No weather found.");
-//       }
-//       return response.json();
-//     })
-//     .then((data2) => this.console.log(data2));
-//   }
-// };
-// weather2.fetchWeather2(data.lat,data.lon);
 const API_key="8b528b99273fc7895a938db1b8590125";
 let city=document.querySelector(".search-bar").value;
 document.querySelector(".search button").addEventListener("click", function () {cityData(city);})
@@ -90,20 +25,6 @@ function getWeatherdata(data){
     })
 };
 showWeatherData=(data)=>{
-// let { icon, description } = data.current.weather[0];
-//  document.querySelector(".city").innerHTML = "Weather in ";
-// document.querySelector(".icon").src =
-//    "https://openweathermap.org/img/wn/" + icon+ ".png";
-//  document.querySelector(".description").innerText = description;
-//  document.querySelector(".temp").innerText = data.current.temp + "°C";
-//  document.querySelector(".humidity").innerText =
-//    "Humidity: " + data.current.humidity + "%";
-//  document.querySelector(".wind").innerText =
-//  "Wind speed: " + data.current.wind_speed + " km/h";
-//  document.querySelector(".weather").classList.remove("loading");
-//  document.body.style.backgroundImage =
-// "url('https://source.unsplash.com/1600x900/?" + "denver" + "')";
-
 let otherDayForcast = '';
     data.daily.forEach((day, idx) => {
         if(idx == 0){
