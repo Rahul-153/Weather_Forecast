@@ -92,6 +92,7 @@ body {
     flex-direction:column;
     justify-content: center;
     margin:1em;
+    max-height: 200em;
   }
   .col-main{
     display: flex;  
